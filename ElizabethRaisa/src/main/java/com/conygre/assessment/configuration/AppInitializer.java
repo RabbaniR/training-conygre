@@ -1,4 +1,4 @@
-package com.conygre.spring.configuration;
+package com.conygre.assessment.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -15,6 +15,6 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
     @Override
     protected String[] getServletMappings() {
-        return new String[] {"/"};
+        return new String[] {"/api/*"};
     }
 }

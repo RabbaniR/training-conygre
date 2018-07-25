@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="requests.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+<h3>Bridges:</h3>
+<div id="bridge_container" style="float: left;"></div>
+<button onclick="genBridges()">Refresh List</button>
+<div style="float: right;">
+    <form>
+        <h5>Add New Bridge</h5>
+        <input id="newBridgeName" name="newBridgeName" placeholder="Name">
+        <input id="newBridgeTraffic" name="newBridgeTraffic" placeholder="Max Traffic Flow (millions)">
+        <button onclick="insertBridge()">Add Bridge</button>
+    </form>
+    <form>
+        <h5>Delete Bridge</h5>
+        <input type="text" id="bridgeId" name="bridgeId" placeholder="Enter ID # of Bridge">
+        <button onclick="deleteBridge()">Delete</button>
+    </form>
+</div>
+
+<p><br><br><br><br></p>
+<h3>Cities:</h3>
+<div id="cities_container"></div>
+
+</body>
+</html>
