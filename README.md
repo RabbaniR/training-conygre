@@ -4,9 +4,9 @@ What is JessRaisa?
 
 JessRaisa is a comprehensive web application that shows you a list of the bridges and cities in the world. 
 
-###H3How to use the image
+### How to use the image
 
-####H4 Downloading the image
+#### Downloading the image
 
 To download JessRaisa image, run this command:
 
@@ -18,7 +18,7 @@ After it is downloaded run the below command to show that the image is working:
 
 docker images  
 
-####H4 Starting a jessraisa instance
+#### Starting a jessraisa instance
 
 Start a new Docker container for the jessRaisa image with this command:
 
