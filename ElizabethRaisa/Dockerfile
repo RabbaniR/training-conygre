@@ -8,6 +8,7 @@ FROM openjdk:8-alpine
 
 WORKDIR /ElizabethRaisa
 
-COPY --from=build /app/target/ElizabethRaisa-1.0-SNAPSHOT.jar .
+COPY --from=build /target/ElizabethRaisa-1.0-SNAPSHOT.jar 
+.
 
 CMD ["java", "-jar", "/ElizabethRaisa/ElizabethRaisa-1.0-SNAPSHOT.jar"]
